@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tonkhow cv v.0.1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Monomaniac+One&display=swap");
+
+      body {
+        padding: 0px;
+        margin: 0px;
+        background-color: black;
+      }
+      .menu-bar{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+      }
+      .menu-bar a{
+        text-decoration: none;
+        font-family: monomaniac one;
+        font-size: 1.3rem;
+        color: white;
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .menu-bar :hover{
+        color: orange;
+        cursor: pointer;
+      }
+      .logo img{
+        width: 75px;
+      }
+      .social i{
+        font-size: 1.3rem;
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .social i :hover{
+        cursor: pointer;
+        color: yellow;
+      }
+      .text-sec{
+        text-align: center;
+        margin-top: 150px;
+      }
+      .text-sec h1{
+        color: white;
+        font-family: monomaniac one;
+      }
+      #job{
+        color: #01D5A2;
+        font-size: 3rem;
+      }
+      .img-sec{
+        text-align: center;
+        margin-top: 0px;
+    }
+    .img-show{
+        display: inline-block;
+        border: solid #01D5A2;
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        padding: 10px;
+      }
+      .img-show img {
+        width: 250px;
+        height: 250px;
+      }
+      .logo{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- top bar -->
+    <div class="menu-bar">
+      <div class="menu">
+        <a href="./home.html">portfolio</a>
+        <a href="./home.html"> About me</a>
+        <a href="./home.html">a</a>
+      </div>
+      <div class="logo">
+        <img src="./images/Logo.png" alt="hello" />
+      </div>
+      <div class="social">
+        <i class="fa-brands fa-github" style="color: white;"></i>
+        <i class="fa-brands fa-instagram" style="color: white;"></i>
+        <i class="fa-brands fa-twitter" style="color: white;"></i>
+        <i class="fa-brands fa-linkedin" style="color: white;"></i>
+      </div>
+    </div>
+
+    <!-- title section -->
+
+    <div class="text-sec">
+        <h1 id="name">Yutthawat Thongwai</h1>
+        <h1 id="job">freelance webdeverloper</h1>
+        <h1 id="from">base in thailand</h1>
+    </div>
+
+    <!-- image -->
+
+    <div class="img-sec">
+        <div class="img-show">
+            <img src="./images/me.png" alt="me">
+        </div>
+    </div>
+  </body>
+</html>
