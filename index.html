@@ -3,125 +3,146 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tonkhow cv v.0.1</title>
+    <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Monomaniac+One&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Monomaniac+One&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Monomaniac+One&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
       body {
         padding: 0px;
         margin: 0px;
         background-color: black;
-      }
-      .menu-bar{
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         align-items: center;
+        font-family: IBM Plex Mono;
+      }
+      .navbar {
+        display: flex;
+        width: 80%;
+        padding: 20px 30px;
+        background-color: #1b1b1b;
+        margin: auto;
+        color: gray;
+      }
+      .menu {
+        flex: 1;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+      .menu a {
+        font-family: "IBM Plex Mono";
+        text-decoration: none;
+        color: #9c9c9c;
+        margin: 0px 20px;
+      }
+      .menu a:hover {
+        color: green;
+      }
+      .content {
+        margin: 0px 20px;
+      }
+      .content i {
+        color: #9c9c9c;
+        margin: 10px;
+        font-size: 25px;
+      }
+      .main {
+        display: flex;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .main1 {
+        width: 900px;
+        display: flex;
+      }
+      .main h1 {
+        color: white;
+        font-family: Raleway;
+        font-size: 50px;
+      }
+      .main p {
+        color: #9c9c9c;
         margin: 20px;
       }
-      .menu-bar a{
-        text-decoration: none;
-        font-family: monomaniac one;
-        font-size: 1.3rem;
+      .main img {
+        width: 375px;
+        height: 375px;
+      }
+      #start{
+        font-family: IBM Plex Mono;
+        margin: 20px;
+        width: 300px;
+        height: 75px;
+        border-radius: 10px;
+        background-color: #3F8E00;
         color: white;
-        display: inline-block;
-        margin-left: 10px;
-        margin-right: 10px;
+        font-size: 15px;
       }
-      .menu-bar :hover{
-        color: orange;
-        cursor: pointer;
-      }
-      .logo img{
-        width: 75px;
-      }
-      .social i{
-        font-size: 1.3rem;
-        display: inline-block;
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-      .social i :hover{
-        cursor: pointer;
-        color: yellow;
-      }
-      .text-sec{
+      .footer{
         text-align: center;
-        margin-top: 150px;
+        width: 80%;
+        margin: 0 auto;
       }
-      .text-sec h1{
-        color: white;
-        font-family: monomaniac one;
+      .footer p {
+        display: flex;
+        align-items: flex-start;
+        justify-content: left;
       }
-      #job{
-        color: #01D5A2;
-        font-size: 3rem;
-      }
-      .img-sec{
-        text-align: center;
-        margin-top: 0px;
-    }
-    .img-show{
-        display: inline-block;
-        border: solid #01D5A2;
-        width: 250px;
-        height: 250px;
-        border-radius: 100%;
-        padding: 10px;
-      }
-      .img-show img {
-        width: 250px;
-        height: 250px;
-      }
-      .logo{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-
+      .footer2 {
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
       }
     </style>
   </head>
   <body>
-    <!-- top bar -->
-    <div class="menu-bar">
+    <div class="navbar">
       <div class="menu">
-        <a href="./home.html">portfolio</a>
-        <a href="./home.html"> About me</a>
-        <a href="./home.html">a</a>
+        <a href="#">home</a>
+        <a href="#">case studies</a>
+        <a href="#">testimonials</a>
+        <a href="#">recent work</a>
+        <a href="#">get int touch</a>
       </div>
-      <div class="logo">
-        <img src="./images/Logo.png" alt="hello" />
-      </div>
-      <div class="social">
-        <i class="fa-brands fa-github" style="color: white;"></i>
-        <i class="fa-brands fa-instagram" style="color: white;"></i>
-        <i class="fa-brands fa-twitter" style="color: white;"></i>
-        <i class="fa-brands fa-linkedin" style="color: white;"></i>
+      <div class="content">
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-behance"></i>
       </div>
     </div>
-
-    <!-- title section -->
-
-    <div class="text-sec">
-        <h1 id="name">Yutthawat Thongwai</h1>
-        <h1 id="job">freelance webdeverloper</h1>
-        <h1 id="from">base in thailand</h1>
+    <div class="main">
+      <div class="main1">
+      <div class="text">
+        <h1>Yutthawat Thongwai</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam
+          magni rerum voluptatum vel, ex, quia vitae quisquam doloremque quo
+          laborum voluptas consequuntur odit facere! Mollitia harum, est quasi
+          vero corporis.
+        </p>
+        <button id="start">Let's get started ></button>
+      </div>
+      <div class="img">
+        <img src="./images/Photo.png" alt=""/>
+      </div>
+      </div>
     </div>
-
-    <!-- image -->
-
-    <div class="img-sec">
-        <div class="img-show">
-            <img src="./images/me.png" alt="me">
-        </div>
+    <div class="footer">
+      <p style="color: white;">Worked with</p>
+      <div class="footer2">
+        <a href="#"><img src="./images/clinkup.png" alt="" /></a>
+        <a href="#"><img src="./images/dropbox.png" alt="" /></a>
+        <a href="#"><img src="./images/elastic.png" alt="" /></a>
+        <a href="#"><img src="./images/paychex.png" alt="" /></a>
+        <a href="#"><img src="./images/stripe.png" alt="" /></a>
+      </div>
     </div>
   </body>
 </html>
